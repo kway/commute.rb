@@ -7,8 +7,8 @@ Command-line application to send an SMS alert if traffic on a particular route e
 I'm enjoying a commute that occasionally takes 1.5-2x the expected duration.  I put the alert in a cron job so that I can just stay a bit late instead of getting stuck in traffic.
 
 ##Requires
-A Twilio account
-A Bing Maps API key
+- A Twilio account
+- A Bing Maps API key
 
 ##Usage
 
@@ -24,7 +24,7 @@ A crontab entry like this one will send an alert at 5:30
     30 17 * * 1-5 /path/to/commute.rb -t '+19175551212' -a '1500 market street, philadelphia, pa' -b '160 N Gulph Rd, King of Prussia, PA' -d
 
 ##Known Bugs / Problems
-There is absolutely no error handling in the app.  It's quick, dirty, and I only scanned the API docs.
+There is absolutely no error handling in the app.  It's quick, dirty, and I didn't even read the API docs.  Frankly, it's surprising that it works at all, even for my limited use case.
 
 ##Author
 Kevin Way of Sector, Inc. (http://getsector.com)
